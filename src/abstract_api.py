@@ -1,9 +1,11 @@
 from abc import ABC, abstractmethod
 
-class API(ABC):
+
+class AbstractAPI(ABC):
     """
-    абстрактный класс
+    Abstract class for working with job service APIs, serves as a template for all subclasses
     """
+
     @abstractmethod
-    def get_vacancies(self, search_query):
+    def get_jobs(self, search_query):
         pass
